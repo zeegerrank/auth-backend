@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
-const { keys } = require("../keys");
+require("dotenv").config();
 
 async function dbConnect() {
   // use mongoose to connect this app to our database on mongoDB using the DB_URL (connection string)
   mongoose
-    .connect(keys.DB_URL, {
+    .connect(process.env.DB_URL, {
       //   these are options to ensure that the connection is done properly
       //   useNewUrlParser: true,
       //   useUnifiedTopology: true,
