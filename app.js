@@ -144,9 +144,9 @@ app.get("/auth-endpoint", auth, (request, response) => {
   response.json({ message: "You are authorized to access me" });
 });
 
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`);
-});
+// const PORT = 3010;
+// app.listen(PORT, () => {
+//   console.log(`App listening on port ${PORT}`);
+// });
 
 module.exports = app;
